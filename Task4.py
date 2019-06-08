@@ -42,6 +42,7 @@ poss_telemarktrs = []
 for item in calls:
     if item[0] not in unique_numbers:
         poss_telemarktrs.append(item[0])
-# Dedupe the list and print
+
+# Dedupe the list, sort and print
 poss_telemarktrs_unique = sorted(set(poss_telemarktrs))
 print("These numbers could be telemarketers: ", *poss_telemarktrs_unique, sep="\n")

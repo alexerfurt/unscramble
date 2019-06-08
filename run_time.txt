@@ -1,0 +1,27 @@
+Run-time Analysis (Worst Case Big O Notation) for Task 0-4:
+(Does not include the csv import and read files part,
+also Python build-in functions such as len(), set() or print() are exluded)
+
+Task 0:
+Time complexity in this solution is constant - O(1),
+because its not dependent on the input size as all operations pick a record directly (first, last elemtent etc.)
+
+Task 1:
+Time complexity in this solution is linear - O(n),
+clear indication is the loop through each input (text, calls) once to create a new list.
+The bigger the input list the more this algorithm has to loop through.
+Since there are two inputs (calls, texts), it's in fact 2n, but its still linear, thus O(n) simplified.
+
+Task 2:
+Time complexity in this solution is linear - O(n),
+similar as in Task 1, we have two for loops, where the first one is iterating through whole n and the second
+one through a subset k of n, which means it's O(n+kn), which is still linear after all.
+
+Task 3:
+Time complexity in this solution is linear - O(n).
+Part A is iterating through the input once, Part B does the same, so O(2n) to be precise, but still linear in the end.
+
+Task 4:
+Time complexity in this solution is linear - O(n).
+Here we have three for loops each going once through one of the inputs (calls,texts).
+So over all run-time would somewhat around O(3n), but again linearly increasing along side n.
