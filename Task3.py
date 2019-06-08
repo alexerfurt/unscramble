@@ -22,9 +22,8 @@ for item in calls:
         if item[1][0] == "(":
             code = item[1][1:4]
             list_of_codes.append(code)
-
             """
-            # Excluding this since Telemarketers never gets called...
+            # Excluding this since Telemarketers actually never get called...
             elif item[1][:3] == "140":
             code = item[1][:3]
             list_of_codes.append(code)
