@@ -19,14 +19,15 @@ one through a subset k of n, which means it's O(n+kn), which is still linear aft
 
 Task 3:
 Time complexity in this solution is linear * logarithmic - O(n log n).
-Part A is iterating through the input once, Part B does the same, so O(2n) to be precise, but still linear for that part.
+Part A is iterating through the input once, but also has an inner loop to find the closing bracket in the receiving number.
+The frequency of how often this will be done would probably increase linearly with n, which is why I count it as another n.
+Part B is also iterating through the input once, so O(3n) in total, but still linear for those parts.
 However, sorting built-in function needs to be taken into consideration as well with O(n log n),
-which is the overall time complexity here.
-
+which is thus the overall time complexity here.
 
 Task 4:
 Time complexity in this solution is linear * logarithmic - O(n log n).
 Here we have three for loops each going once through one of the inputs (calls,texts).
 So over all run-time would be somewhat around O(3n), but again linearly increasing along side n.
 However, sorting built-in function needs to be taken into consideration as well with O(n log n),
-which is the overall time complexity here.
+which is thus the overall time complexity here.
