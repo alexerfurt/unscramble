@@ -20,6 +20,7 @@ for item in calls:
     if item[0][1:4] == "080":
         # Check whether receiver phone number is fixed line, mobile or Telemarketers
         if item[1][0] == "(":
+            # Iterating through number until the closing bracket ')' is found
             for i in range(len(item[1])):
                 if item[1][i] == ")":
                     code = item[1][1:i]
