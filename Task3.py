@@ -20,8 +20,11 @@ for item in calls:
     if item[0][1:4] == "080":
         # Check whether receiver phone number is fixed line, mobile or Telemarketers
         if item[1][0] == "(":
-            code = item[1][1:4]
-            list_of_codes.append(code)
+            for i in range(len(item[1])):
+                if item[1][i] == ")":
+                    code = item[1][1:i]
+                    list_of_codes.append(code)
+                    break
             """
             # Excluding this since Telemarketers actually never get called...
             elif item[1][:3] == "140":
