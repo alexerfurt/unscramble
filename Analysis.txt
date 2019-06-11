@@ -18,10 +18,15 @@ similar as in Task 1, we have two for loops, where the first one is iterating th
 one through a subset k of n, which means it's O(n+kn), which is still linear after all.
 
 Task 3:
-Time complexity in this solution is linear - O(n).
-Part A is iterating through the input once, Part B does the same, so O(2n) to be precise, but still linear in the end.
+Time complexity in this solution is linear * logarithmic - O(n log n).
+Part A is iterating through the input once, Part B does the same, so O(2n) to be precise, but still linear for that part.
+However, sorting built-in function needs to be taken into consideration as well with O(n log n),
+which is the overall time complexity here.
+
 
 Task 4:
-Time complexity in this solution is linear - O(n).
+Time complexity in this solution is linear * logarithmic - O(n log n).
 Here we have three for loops each going once through one of the inputs (calls,texts).
-So over all run-time would somewhat around O(3n), but again linearly increasing along side n.
+So over all run-time would be somewhat around O(3n), but again linearly increasing along side n.
+However, sorting built-in function needs to be taken into consideration as well with O(n log n),
+which is the overall time complexity here.
